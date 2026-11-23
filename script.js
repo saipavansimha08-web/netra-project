@@ -1,6 +1,6 @@
 function updateClock() {
     const clock= document.getElementById("clock");
-    =new Date().toDateString();
+    clock.textContent = new Date().toDateString();
     if(clock) clock.textContent=new Date().toLocaleTimeString();
 }
 updateClock();
